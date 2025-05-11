@@ -5,12 +5,7 @@
   text-decoration: none;
 }
 
-body {
-  font-family: sans-serif;
-  background: #f4d9ed;
-  width: 100%;
-  max-width: 800px;
-}
+
 .slider {
   width: 100%;
   max-width: 800px;
