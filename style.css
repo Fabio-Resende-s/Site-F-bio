@@ -1,57 +1,70 @@
- body {
+* {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff0f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      flex-direction: column;
-      padding: 20px;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-     header {
+header {
       background-color: #d1007d;
-      color: white;
-      padding: 1rem 2rem;
+      color: rgb(250, 189, 227);
+      border-radius: 20px;
+      padding: 10px;
+      margin-top: 0.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    
+      
     }
 
-    .logo {
+.logo {
+  padding-left: 2rem;
       font-size: 1.5rem;
       font-weight: bold;
     }
 
-    nav ul {
+nav ul {
+  padding-right: 10rem;
+  color: #d1007d;
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      gap: 0.3rem;
+    
+    }
+nav ul li{
+  
+  border-radius: 20px;
+    background-color: rgb(228, 98, 159);
+    padding: 0.2rem;
+    margin-right: 2rem;
+    background-color: rgb(237, 140, 208);
+    color: #d1007d;
     }
 
-    h1 {
+
+h1 {
+  text-align: center;
       color: #d1007d;
       font-size: 3rem;
       margin-bottom: 10px;
     }
 
-    p {
+p {
       font-size: 1.2rem;
       color: #333;
       max-width: 600px;
       margin: 10px auto 30px;
     }
 
-    img {
+img {  
       width: 250px;
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      margin-bottom: 50px;
+      
     }
 
-    .assinatura {
+.assinatura {
       font-style: italic;
       color: #666;
       font-size: 1rem;
