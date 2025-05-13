@@ -2,105 +2,127 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  align-items: center;
-  text-decoration: none;
 }
 body {
-  width: 100%;
-  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background-color: #fff8f0;
+  color: #333;
 }
 
+/* Header */
 .navega {
-   background-color: #3b35f4;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 0.5rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1111e8;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .logo{
-  padding-left: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  text-decoration: none;
- 
-  
+  color: #e6d2d2;
 }
-form{
-  width: 400px;
- padding-left: 2rem;
- font-size: 1.5rem;
- font-weight: bold;
- text-decoration: none;
- margin-right: 10rem;
- 
- 
-}
-form input{
-  border-radius: 20px;
-  text-align: center;
-  width: 15rem;
-  height: 30px;
-  margin-right: 0.9rem;
-  
-}
-button{
-  margin-left: 0.5px;
-  height: 2rem;
-  overflow: hidden;
-}
-nav ul {
-  margin-left: 6rem;
-  text-align: center;
-  padding-right: 10rem;
-  list-style: none;
+
+form {
   display: flex;
-  gap: 0.1rem;
-  background-color: #e67fce;
-  
-}
-nav ul li {
-  border-radius: 0.3rem;
-  padding: 0.2rem;
-  margin-right: 1rem;
-  text-decoration: none;
- 
-
-}
-
-
-
-
-h1 {
-  text-align: center;
-  color: #eb0d92;
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.slider {
   width: 100%;
-  max-width: 800px;
-  height: 500px;
-  margin: 50px auto;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
+  max-width: 400px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: #f02020;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eddddd;
+  font-weight: bold;
+}
+/* Slider */
+.slider {
+  overflow-x: block;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 4rem;
 }
 .slides {
   display: flex;
-  width: 500%; /* 4 imagens */
-  animation: slide 15s infinite;
+  gap: 1rem;
+  animation: slide 12s infinite;
 }
 
 .slides img {
-  width: 100%;
-  height: 500px;
+  width: 80vw;
+  height: 100%;
   object-fit: cover;
 }
 
+/* Texto principal */
+.texto {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: #f3e9f0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Imagens */
+main img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+/* Títulos */
+h1 {
+  text-align: center;
+  color: #b22222;
+  margin: 1rem 0;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fbe2e2;
+  border-radius: 10px;
+}
+
+.assinatura {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsividade extra (opcional) */
 @keyframes slide {
   0% {
     margin-left: 0%;
@@ -109,50 +131,24 @@ h1 {
     margin-left: 0%;
   }
   25% {
-    margin-left: -150%;
+    margin-left: -100%;
   }
   45% {
-    margin-left: -150%;
+    margin-left: -100%;
   }
   50% {
-    margin-left: -290%;
+    margin-left: -200%;
   }
   70% {
-    margin-left: -290%;
+    margin-left: -200%;
   }
   75% {
-    margin-left: -440%;
+    margin-left: -400%;
   }
   95% {
-    margin-left: -440%;
+    margin-left: -400%;
   }
   200% {
     margin-left: 0%;
   }
-}
-
-
-
-
-
-.texto{
-  font-size: 1.2rem;
-  color: #db0c8c;
-  max-width: 600px;
-  margin: 10px auto 30px;
-}
-
-img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 50px;
-}
-
-.assinatura {
-  margin: 50px;
-  background-color: #e67fce;
-  font-style: italic;
-  color: #706868;
-  font-size: 1rem;
 }
